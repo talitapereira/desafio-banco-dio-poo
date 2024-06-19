@@ -1,3 +1,6 @@
+from historico import Historico
+
+
 class Conta:
     
     AGENCIA = "0001"
@@ -7,7 +10,7 @@ class Conta:
         self._agencia = agencia
         self._cliente = cliente
         self._saldo = 0
-        self._historico = []
+        self._historico = Historico()
         
     @property    
     def saldo (self):
