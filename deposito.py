@@ -7,4 +7,8 @@ class Deposito(Transacao):
     def registrar(self, conta):
         pass
 
+    @property
+    def valor(self):
+        return self._valor
+    
     

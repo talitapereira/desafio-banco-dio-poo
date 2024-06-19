@@ -16,6 +16,10 @@ class Conta:
     def saldo (self):
         return self._saldo
     
+    @property
+    def agencia(self):
+        return Conta.AGENCIA
+    
     @classmethod
     def nova_conta(cls, cliente, numero):
         return cls(numero, Conta.AGENCIA, cliente)
